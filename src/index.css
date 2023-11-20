@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.50%;
+  overflow: hidden;
+}
+
+.container {
+   padding: 0 .5rem;
+   max-width: 100%;
+}
+
+.centerText {
+  text-align: center;
+  /* margin-top: 1rem; */
+  font-size: 12px;
+}
+
+.name-style {
+  font-size: 15px;
+  padding-top: 1rem;
+  font-weight: 500;
+}
+
+.userImage {
+  width: 30px;
+  height: auto;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+}
+
+.linkText {
+  align-self: flex-end;
+  padding-right: 3rem;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  /* width: 100vw; */
+}
+
+.registerForm, .loginForm {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-left: 2rem;
+  color: #0080b8;
+  align-self: flex-start;
+}
+
+.registerForm input, .loginForm input {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  padding: .5rem;
+  width: 90%;
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.registerForm ::placeholder, .loginForm ::placeholder {
+  font-size: 13px;
+}
+
+.registerForm label, .loginForm label {
+  align-self: flex-start;
+  padding-left: 2rem;
+  font-size: 14px;
+}
+
+.loginForm .mainTitle {
+  margin: 4rem 0;
+}
+
+.registerForm .mainTitle {
+  margin: 2rem 0;
+}
+
+.imageWrapper {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.imageWrapper img {
+  max-width: 30%;
+}
+
+.dashText {
+  text-align: center;
+  padding-top: 3rem;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #0080b8;;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profileButton {
+  font-size: 15px;
+  border: none;
+  padding: .8rem 1rem;
+}
+
+.userTable {
+  min-width: 95%;
+}
+
+.delButton {
+  border: none;
+  color: #FFF;
+  background: coral;
+  padding: .5rem 1rem;
+}
+
+.profileButton:nth-of-type(1) {
+  background: #0080b8;
+  color: #FFF;
+}
+
+.profileButton:nth-of-type(2) {
+  background: #0080b8;
+  color: #FFF;
+}
+
+.profileButton:nth-of-type(3) {
+  background: coral;
+  color: #FFF;
+}
+
+.regButton, .loginButton {
+  margin-top: 2rem;
+  width: 90%;
+  font-size: 15px;
+  background-color: #0080b8;
+  color: #FFF;
+  border: none;
+  padding: .8rem .4rem;
+}
+
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: 500;
+}
+
+.userHeading {
+  background: teal;
+  color: white;
+}
+
+.heading-item {
+  flex: 4;
+  text-align: center;
+}
+
+
+.heading-item:first-of-type {
+  flex: 1;
+}
+
+.heading-item:nth-last-of-type(2) {
+  flex: 3;
+}
+
+.data-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+ .data-container .items {
+   flex: 4;
+ }
+
+ .data-container .items:nth-last-of-type(2) {
+   flex: 3;
+ }
+
+
+.data-container .items:first-of-type {
+  flex: 1;
+}
+
+.data-img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+ .registerForm label, .loginForm label {
+  margin-left: 3rem;
+ }
+
+ .mainTitle {
+  padding-left: 5rem;
+ }
+
+ .linkText {
+  padding-right: 5rem;
+ }
+
+}

@@ -1,0 +1,97 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 3rem;
+
+    thead {
+        background-color: grey;
+        color: white;
+
+        th {
+            padding: .5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    tr {
+
+        justify-content: space-between;
+        font-size: 15px;
+
+        td {
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    button {
+        padding: .5rem 1.2rem;
+        border: none;
+        background: lightgreen;
+        color: white;
+        cursor: pointer;
+    }
+
+    .del-btn {
+        background: coral;
+    }
+
+    .data-row:nth-child(even) {
+        background: #0081b8ce;
+        color: white;
+    }
+
+    .data-row:nth-child(odd) {
+        background: inherit;
+        color: black;
+    }
+
+
+    @media screen and (min-width: 300px) {
+
+        tr {
+            font-size: 12px;
+        }
+
+        button {
+            font-size: 11px;
+            padding: .3rem .8rem;
+        }
+
+        img {
+             width: 25px;
+             height: 25px;
+        }
+    }
+
+ 
+    @media screen and (min-width: 800px) {
+        tr{
+            font-size: 16px;
+        }
+
+         button {
+            font-size: 15px;
+            padding: .5rem .1.2rem;
+        }
+
+        img {
+             width: 30px;
+             height: 30px;
+        }
+    }
+
+}
+
+   .profile-btn {
+       text-decoration: none;
+       color: white;
+       background: coral;
+       border: none;
+       padding: .5rem 1.3rem;
+       margin-top: 1rem;
+   }

@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10px;
+    background: #0080b8;
+    color: white;
+
+    button {
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: inherit;
+    }
+}
