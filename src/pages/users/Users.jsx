@@ -54,13 +54,18 @@ export default function Users() {
 
         const documentId = e.target.getAttribute("user-data-id");
 
+        const data = {
+            data: documentId
+        }
+
+
         try {
 
-            const response = await axios.delete(`https://users-management-backend-hncm.onrender.com/api/users/remove/${documentId}`, { data: { data: documentId } }, { withCredentials: true, })
+            const response = await axios.delete(`https://users-management-backend-hncm.onrender.com/api/users/remove/${documentId}`,data , { withCredentials: true, })
 
             if (response.status === 200) {
 
-                toast.success("User deleted");
+                toast.success(response.data);
 
                 fetchData()
 
