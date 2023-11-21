@@ -47,8 +47,6 @@ export default function Login() {
             )
             if (response.status === 200) {
 
-                toast.success('Login successfull')
-
                 setUserId(response.data._id)
 
                 localStorage.setItem("token",response.data.accessToken)
