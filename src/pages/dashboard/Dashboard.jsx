@@ -36,7 +36,7 @@ export default function Dashboard() {
 
         try {
 
-            const response = await axios.get(`/api/users/${userId}`, { withCredentials: true });
+            const response = await axios.get(`https://users-management-backend-hncm.onrender.com/api/users/${userId}`, { withCredentials: true });
 
             setData(response.data)
 

@@ -62,7 +62,7 @@ export default function Update() {
 
         try {
 
-            const response = await axios.put(`/api/profile/update/${id}`,userData, { withCredentials: true });
+            const response = await axios.put(`https://users-management-backend-hncm.onrender.com/api/profile/update/${id}`,userData, { withCredentials: true });
 
             toast.success(response.data)
 

@@ -35,7 +35,7 @@ export default function Login() {
 
         try {
 
-            const response = await axios.post("/api/login", data)
+            const response = await axios.post("https://users-management-backend-hncm.onrender.com/api/login", data ,{withCredentials: true})
 
             if (response.status === 200) {
 

@@ -14,7 +14,7 @@ export default function Users() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("/api/users", { withCredentials: true });
+            const response = await axios.get("https://users-management-backend-hncm.onrender.com/api/users", { withCredentials: true });
             setData(response.data);
         } catch (error) {
             console.error("Error fetching data:", error);
@@ -31,7 +31,7 @@ export default function Users() {
 
         try {
 
-            const response = await axios.get(`/api/edit/${documentId}`, {withCredentials: true});
+            const response = await axios.get(`https://users-management-backend-hncm.onrender.com/api/edit/${documentId}`, {withCredentials: true});
 
             if(response.status === 200) {
 
@@ -56,7 +56,7 @@ export default function Users() {
 
         try {
 
-            const response = await axios.delete(`/api/users/remove/${documentId}`, { data: { data: documentId } }, { withCredentials: true, })
+            const response = await axios.delete(`https://users-management-backend-hncm.onrender.com/api/users/remove/${documentId}`, { data: { data: documentId } }, { withCredentials: true, })
 
             if (response.status === 200) {
 
