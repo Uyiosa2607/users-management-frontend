@@ -21,7 +21,6 @@ export default function Update() {
     const response = await axios.get(`/api/users/${id}`, {withCredentials: true})
 
         if(response) {
-
             setEmail(response.data.email)
             setName(response.data.name)
         }
@@ -38,10 +37,6 @@ export default function Update() {
 
     const handleEmail = (e) => {
         setEmail(e.target.value)
-    }
-
-    const authCheck = (e) => {
-        setPass(e.target.value)
     }
 
     const handleName = (e) => {

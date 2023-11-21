@@ -36,8 +36,15 @@ export default function Login() {
 
         try {
 
-            const response = await axios.post("https://users-management-backend-hncm.onrender.com/api/login", data ,{withCredentials: true})
+            const response = await toast.promise(
 
+                axios.post("https://users-management-backend-hncm.onrender.com/api/login", data, {withCredentials:true}),
+                {
+                    pending: 'Pending',
+                    success: 'Successfully Loged in',
+                    error: 'Invalid credentials'
+                }
+            )
             if (response.status === 200) {
 
                 toast.success('Login successfull')
