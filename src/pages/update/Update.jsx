@@ -18,7 +18,7 @@ export default function Update() {
 
    async function getData(){
 
-    const response = await axios.get(`/api/users/${id}`, {withCredentials: true})
+       const response = await axios.get(`https://users-management-backend-hncm.onrender.com/api/users/${id}`, {withCredentials: true})
 
         if(response) {
             setEmail(response.data.email)
