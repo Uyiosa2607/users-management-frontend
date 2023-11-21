@@ -1,6 +1,5 @@
 import "./style.scss"
 import { useNavigate, Link } from "react-router-dom";
-import Cookies from "js-cookie";
 import {toast, ToastContainer} from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -8,11 +7,11 @@ function Header() {
 
     const navigate = useNavigate();
 
-    const token = !!Cookies.get("token");
+    const token = localStorage.getItem("token")
 
     function handleLogout() {
 
-        Cookies.remove("token")
+        localStorage.removeItem("token")
         toast.error("Logged Out!!")
         navigate("/login")
     }

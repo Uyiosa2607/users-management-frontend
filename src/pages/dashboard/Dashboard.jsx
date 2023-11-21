@@ -5,7 +5,6 @@ import { userAtom } from "../../utils/Atom";
 import { useAtom } from "jotai";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify"
-import Cookies from "js-cookie";
 
 
 export default function Dashboard() {
@@ -24,7 +23,7 @@ export default function Dashboard() {
     }
 
     function logOut() {
-        Cookies.remove("token")
+        localStorage.removeItem("token")
         toast.warn("Logged out!")
         navigate("/login")
     }
@@ -50,6 +49,7 @@ export default function Dashboard() {
        
         fetchData(); 
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

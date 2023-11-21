@@ -9,6 +9,7 @@ import { userAtom } from "../../utils/Atom";
 
 export default function Login() {
 
+    // eslint-disable-next-line no-unused-vars
     const [userId, setUserId] = useAtom(userAtom);
 
 
@@ -43,19 +44,17 @@ export default function Login() {
 
                 setUserId(response.data._id)
 
+                localStorage.setItem("token",response.data.accessToken)
+
                 navigate("/dashboard");
 
             } else {
-
                 toast.error("Invalid Credentials")
-
             }
-
 
         } catch (error) {
             console.error(error)
         }
-
     }
 
     return (
