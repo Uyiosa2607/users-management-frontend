@@ -18,7 +18,7 @@ export default function Update() {
 
    async function getData(){
 
-    const response = await axios.get(`/api/users/${id}`)
+    const response = await axios.get(`/api/users/${id}`, {withCredentials: true})
 
         if(response) {
 
