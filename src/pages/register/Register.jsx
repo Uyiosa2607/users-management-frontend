@@ -45,7 +45,7 @@ export default function Register() {
 
             const response = await toast.promise(
 
-                axios.post("https://users-management-backend-hncm.onrender.com/api/register", userData),
+                axios.post("https://users-management-backend-hncm.onrender.com/api/auth/register", userData),
                 {
                     pending: 'Pending',
                     success: 'User Registered Successfully !',
