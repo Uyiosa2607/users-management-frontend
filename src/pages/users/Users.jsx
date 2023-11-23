@@ -52,16 +52,11 @@ export default function Users() {
 
     async function handleDel(e) {
 
-        const documentId = e.target.getAttribute("user-data-id");
-
-        const data = {
-            data: documentId
-        }
-
-
+        const id = e.target.getAttribute("user-data-id");
+       
         try {
 
-            const response = await axios.delete(`https://users-management-backend-hncm.onrender.com/api/users/remove/${documentId}`,data , { withCredentials: true, })
+            const response = await axios.delete(`https://users-management-backend-hncm.onrender.com/api/remove/${id}`,{withCredentials:true})
 
             if (response.status === 200) {
 

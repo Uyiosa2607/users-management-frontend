@@ -38,7 +38,7 @@ export default function Login() {
 
             const response = await toast.promise(
 
-                axios.post("https://users-management-backend-hncm.onrender.com/api/login", data, {withCredentials:true}),
+                axios.post("https://users-management-backend-hncm.onrender.com/api/auth/login", data, {withCredentials:true}),
                 {
                     pending: 'Pending',
                     success: 'Successfully Loged in',
